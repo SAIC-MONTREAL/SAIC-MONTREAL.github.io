@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SAGE: Smart home Agent with Grounded Execution</title>
+  <link rel="icon" type="image/x-icon" href="static/images/sage_favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SAGE: Smart Home Agent with Grounded Execution</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Dmitriy Rivkin,
+              </span>
+              <span class="author-block">
+                Francois Hogan,
+              </span>
+              <span class="author-block">
+                Amal Feriani,
+              </span>
+              <span class="author-block">
+                Abhisek Konar,
+              </span>
+              <span class="author-block">
+                Adam Sigal,
+              </span>
+              <span class="author-block">
+                Xue Liu,
+              </span>
+              <span class="author-block">
+                Greg Dudek
+              </span>
+              <!-- <span class="author-block">
+                <a href="AUTHOR with PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,
+              </span> -->
+              </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Samsung AI Center Montreal<br>Conference name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2311.00772.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2311.00772" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TODO: add 1-line description -->
+
+<!-- demo img (tmp?) -->
+<section class="hero is-max-desktop">
+  <div class="hero-body">
+    <div class="columns is-centered" style="text-align: center">
+      <div class="column" style="padding: 0em">
+        <h2 class="subtitle has-text-centered">
+          SAGE is an LLM-based smart assistant framework for smart homes, leveraging a variety of tools.
+        </h2>
+        <img src="./static/images/put_game_on_demo_horiz.png" alt="todo" style="width: 70%;height: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- demo gif-->
+<!-- <section class="banner video">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered" style="text-align: center">
+        <div class="column" style="padding: 2em">
+            <img src="./static/images/put_game_on_demo_horiz.png" alt="todo" style="width: 150%;height: auto;">
+            <p style="margin-top: 1em; font-weight: bold">image subtext</p>
+        </div>
+      </div>
+    </div> -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/SAGE_vid_long.mp4"
+        type="video/mp4">
+      </video> -->
+      <!-- <h2 class="subtitle has-text-centered">
+        ^Simplified gif / video of the example shown in our main video. Horizontal? 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This article introduces <span class="dnerf">SAGE</span> (Smart home Agent with Grounded Execution), a framework designed to maximize the flexibility of smart home assistants by replacing manually-defined inference logic with an LLM-powered autonomous agent system. SAGE integrates information about user preferences, device states, and external factors (such as weather and TV schedules) through the orchestration of a collection of tools. SAGE's capabilities include learning user preferences from natural-language utterances, interacting with devices by reading their API documentation, writing code to continuously monitor devices, and understanding natural device references. To evaluate SAGE, we develop a benchmark of 43 highly challenging smart home tasks, where SAGE successfully achieves 23  tasks, significantly outperforming existing LLM-enabled  baselines (5  / 43)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Tools carousel -->
+<section class="hero max-desktop">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Tools</h2>
+      <p style="margin-top: 1em; font-weight: bold">SAGE has access to a variety of tools to carry out complex commands.</p>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/sage_tools/personalization.png" alt="Tools for personalization"/>
+        <!-- <h2 class="subtitle has-text-centered">
+          Tools for personalization
+        </h2> -->
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/sage_tools/physical_purple_big.png" alt="Tools for physical grounding"/>
+        <!-- <h2 class="subtitle has-text-centered">
+          Tools for physical grounding
+        </h2> -->
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/sage_tools/external_big.png" alt="Tools for external grounding"/>
+        <!-- <h2 class="subtitle has-text-centered">
+          Tools for external grounding
+       </h2> -->
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Overview. -->
+<!-- SAGE image -->
+<!-- <section class="columns is-centered" style="margin-top: 15px">
+  <div class="column is-four-fifths"> -->
+      <!-- <h2 class="title is-3">Section Title</h2> -->
+      <!-- <div class="columns is-centered" style="text-align: center">
+          <div class="column" style="padding: 2em">
+              <img src="./static/images/sage.png" alt="todo" style="width: 40%;height: auto;">
+              <p style="margin-top: 1em; font-weight: bold">^Add tool names to this figure?</p>
+          </div>
+      </div>
+      <h2 class=" subtitle has-text-centered" style="padding-top: 10px">
+          <p><span class="dnerf">SAGE</span> is an LLM-based system capable of orchestrating a multitude of tools to support physically grounded and complex decision making.</p> -->
+          <!-- <p> This transformer is specifically designed for sequence prediction over tokens from the learned vocabulary.</p>
+          <p>Once fully trained, it enables the direct sampling of meshes as sequences from this vocabulary.</p> -->
+      <!-- </div>
+  </div>
+</section> -->
+
+
+<!-- SAGE full video -->
+<!-- <section class="banner video">
+  <h2 class="title is-3">Demo</h2>
+  <div class="container is-max-desktop">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/SAGE_vid_long.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        ^Simplified gif / video of the example shown in our main video. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- SAGE full video -->
+
+<!-- SAGE full video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Demo</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="static/videos/SAGE_vid_long.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SAGE full video -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">System Architecture</h2>
+      <p>An LLM-based system capable of orchestrating a multitude of tools to support physically grounded and complex decision making.</p>
+    </div>
+    <div class="columns is-centered" style="text-align: center">
+      <div class="column" style="padding: 2em">
+          <img src="./static/images/agent_block_diagram.png" alt="todo" style="width: 60%;height: auto;">
+          <p style="margin-top: 1em; font-weight: bold">^gif?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Personalization</h2>
+      <div class="columns is-centered" style="text-align: left">
+          <div class="column" style="padding: 2em">
+              <p style="margin-top: 1em">
+                <b>Data Sources</b>
+                <ul>
+                  <li>- User utterances [now]</li>
+                  <li>- Device interaction history [future work]</li>
+                  <li>- Sensor history [future work]</li>
+                </ul>
+                  </br>
+                  <b>Long-term memory</b></br>
+                  Stores user utterances (e.g., commands, feedback)
+                  </br>
+                </br>
+                  <b>User profiling </b></br>
+                  Hierarchal high-level summarization: 
+                  </br></br>
+                  <b>Daily preference summaries </b></br>
+                  Global profile from daily summaries
+                  </br></br>
+                  <b>Personalization tool</b> 
+                  Combines the long-term and user profiles to generate responses.
+              </p>
+          </div>
+          <div class="column" style="align-self: center">
+              <img src="./static/images/personalization_module.png" alt="sequencing_small">
+              <p style="margin-top: 1em; font-weight: bold">text</p>
+          </div>
+      </div>
+      <div class="content has-text-justified" style="padding-top: 15px">
+          <p>We first learn a vocabulary for triangle meshes, which we then use for autoregressive generation of a mesh.We learn our vocabulary of geometric embeddings from a vast collection of shapes. This is done using an encoder-decoder network, which features vector quantization at its bottleneck.</p>
+          <p> This transformer is specifically designed for sequence prediction over tokens from the learned vocabulary.</p>
+          <p>Once fully trained, it enables the direct sampling of meshes as sequences from this vocabulary.</p>
+      </div>
+      <p>
+        
+      </p>
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">SmartThings Integration</h2>
+    
+    <p>Smart Things Tool enables SAGE to interact with SmartThings devices.</p>
+    <div class="columns is-centered" style="text-align: left">
+      <div class="column" style="padding: 2em">
+          <p style="margin-top: 1em">
+            <b>Multi-Step Planning</b>
+            <ol>
+              <li>API Planner (device & capability selection)</li>
+              <li>Documentation Retrieval</li>
+              <li>Get Attribute (read state)</li>
+              <li>Execution (send command)</li>
+            </ol>
+              </br>
+            <b>Code Free Interaction</b></br>
+            Leverages online documentation to control SmartThings devices
+              </br>
+              </br>
+            <b>Failure recovery</b></br>
+            Agent usually automatically recovers from failures like incorrectly formatting the request, or reading the wrong attribute.
+            </br></br>
+          </p>
+      </div>
+      <div class="column" style="align-self: center">
+          <img src="./static/images/smarthings_integration2.png" alt="sequencing_small">
+          <p style="margin-top: 1em; font-weight: bold">text</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Persistent Commands</h2>
+
+
+    <p>A framework that can remember long-term objectives (e.g. <i>"turn on the lights when the TV turns off"</i>).</p>
+    <div class="columns is-centered" style="text-align: left">
+      <div class="column" style="padding: 2em">
+          <p style="margin-top: 1em">
+            <b>Code Generation</b></br>
+            We let the LLM generate the code to check the conditions that must be met to execute a command. Code writing process is implemented similarly to the SmartThings tool (planning, documentation reading, etc).
+              </br>
+              </br>
+            <b>Polling</b></br>
+            A server polls the code generated by LLM, until the trigger condition is met.
+              </br>
+              </br>
+            <b>Execution</b></br>
+            Once the condition is met, the command is executed on the device.
+              </br>
+              </br>
+            <b>Flexible and Efficient</b></br>
+            Retain LLM flexibility without continuously running the agent to poll the condition.
+              </br>
+              </br>
+          </p>
+      </div>
+      <div class="column" style="align-self: center">
+          <img src="./static/images/persistent.png" alt="sequencing_small">
+          <p style="margin-top: 1em; font-weight: bold">Persistent commands pipeline</p>
+      </div>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Device Disambiguation</h2>
+
+      <p>Determine which device the user is referencing to by leveraging visual context.</p>
+    <div class="columns is-centered" style="text-align: left">
+      <div class="column" style="padding: 2em">
+          <p style="margin-top: 1em">
+            <b>Device Setup</b></br>
+            Capture a picture of the room where the device is kept.
+              </br>
+              </br>
+            <b>VLM Device Matching</b></br>
+            Use VLMs (e.g. CLIP) to determine which device best matches the user query.
+              </br>
+              </br>
+            <b>Execution</b></br>
+            Once the condition is met, the command is executed on the device.
+              </br>
+              </br>
+            <b>Flexible and Efficient</b></br>
+            Retain LLM flexibility without continuously running the agent to poll the condition.
+              </br>
+              </br>
+          </p>
+          <img src="./static/images/device_disambiguation1.png" alt="sequencing_small">
+      </div>
+      <div class="column" style="align-self: center">
+          <img src="./static/images/device_disambiguation2.png" alt="sequencing_small">
+          <p style="margin-top: 1em; font-weight: bold">Home layout with multiple connected lights</p>
+      </div>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results</h2>
+    <p>TODO</p>
+</div>
+</div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Novel datasets. -->
+<!-- 2 looping vids one after the other -->
+<!-- <section class="columns is-centered" style="margin-top: 25px">
+  <div class="column is-full-width">
+      <h2 class="title is-4">Shape Completion</h2>
+      <div class="content has-text-justified">
+          <p>
+              Given a partial mesh, our method can infer multiple possible shape completions.
+          </p>
+      </div>
+      <div class="columns is-centered">
+          <div style="display: flex; height: 450px; justify-content: center;">
+              <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
+                  <source src="./static/video/web_completion_00113336.mp4" type="video/mp4">
+              </video>
+          </div>
+      </div>
+      <div class="content has-text-justified">
+          <p>
+              Here we show completion as the partial input mesh is edited through user actions.
+          </p>
+      </div>
+      <div class="columns is-centered">
+          <div style="display: flex; height: 450px; justify-content: center;">
+              <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
+                  <source src="./static/video/web_completion_edit.mp4" type="video/mp4">
+              </video>
+          </div>
+      </div>
+  </div>
+</section> -->
+
+<!-- Overview. -->
+<!-- 2 images side by side -->
+<!-- <section class="columns is-centered" style="margin-top: 15px">
+  <div class="column is-full-width">
+      <h2 class="title is-4">Method Overview</h2>
+      <div class="columns is-centered" style="text-align: center">
+          <div class="column" style="padding: 2em">
+              <img src="./static/images/reconstruction_small.jpg" alt="reconstruction_small">
+              <p style="margin-top: 1em; font-weight: bold">Vocabulary Learning</p>
+          </div>
+          <div class="column" style="align-self: center">
+              <img src="./static/images/sequencing_small.jpg" alt="sequencing_small">
+              <p style="margin-top: 1em; font-weight: bold">Transformer Training</p>
+          </div>
+      </div>
+      <div class="content has-text-justified" style="padding-top: 15px">
+          <p>We first learn a vocabulary for triangle meshes, which we then use for autoregressive generation of a mesh.We learn our vocabulary of geometric embeddings from a vast collection of shapes. This is done using an encoder-decoder network, which features vector quantization at its bottleneck.</p>
+          <p> This transformer is specifically designed for sequence prediction over tokens from the learned vocabulary.</p>
+          <p>Once fully trained, it enables the direct sampling of meshes as sequences from this vocabulary.</p>
+      </div>
+  </div>
+</section> -->
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Paper</h2>
+      <iframe  src="static/pdfs/Smarthome_Paper.pdf" width="100%" height="550">
+          </iframe>
+      </div>
+    </div>
+  </section>
+<!--End paper -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{rivkin2023sage,
+      title={SAGE: Smart home Agent with Grounded Execution}, 
+      author={Dmitriy Rivkin and Francois Hogan and Amal Feriani and Abhisek Konar and Adam Sigal and Steve Liu and Greg Dudek},
+      year={2023},
+      eprint={2311.00772},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
