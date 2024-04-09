@@ -81,14 +81,18 @@
               </span> -->
               </div>
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Samsung AI Center Montreal<br>Conference name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">
+                      <b>Samsung AI Center Montreal</b>
+                      <!-- <br>
+                      Conference name and year TODO: add journal--> 
+                    </span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/2311.00772.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -96,7 +100,7 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Supplementary PDF link -->
                     <!-- <span class="link-block">
@@ -109,27 +113,31 @@
                     </a>
                   </span> -->
 
+
+                  <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                    <a href="https://arxiv.org/abs/2311.00772" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
                   <!-- Github link -->
-                  <!-- <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  <span class="link-block">
+                    <a href="https://github.com/SAIC-MONTREAL/SAGE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
-                </span> -->
+                </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2311.00772" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+                
             </div>
           </div>
         </div>
@@ -181,7 +189,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Abstract [TODO: update with final abstract]</h2>
         <div class="content has-text-justified">
           <p>
             This article introduces <span class="dnerf">SAGE</span> (Smart home Agent with Grounded Execution), a framework designed to maximize the flexibility of smart home assistants by replacing manually-defined inference logic with an LLM-powered autonomous agent system. SAGE integrates information about user preferences, device states, and external factors (such as weather and TV schedules) through the orchestration of a collection of tools. SAGE's capabilities include learning user preferences from natural-language utterances, interacting with devices by reading their API documentation, writing code to continuously monitor devices, and understanding natural device references. To evaluate SAGE, we develop a benchmark of 43 highly challenging smart home tasks, where SAGE successfully achieves 23  tasks, significantly outperforming existing LLM-enabled  baselines (5  / 43)
@@ -268,7 +276,7 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Demo</h2>
+      <h2 class="title is-3">Proof-of-Concept Demo</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -292,7 +300,7 @@
     <div class="columns is-centered" style="text-align: center">
       <div class="column" style="padding: 2em">
           <img src="./static/images/agent_block_diagram.png" alt="todo" style="width: 60%;height: auto;">
-          <p style="margin-top: 1em; font-weight: bold">^gif?</p>
+          <!-- <p style="margin-top: 1em; font-weight: bold">^gif?</p> -->
       </div>
     </div>
   </div>
@@ -329,18 +337,17 @@
               </p>
           </div>
           <div class="column" style="align-self: center">
-              <img src="./static/images/personalization_module.png" alt="sequencing_small">
-              <p style="margin-top: 1em; font-weight: bold">text</p>
+              <img src="./static/images/personalization_module_v2.png" alt="sequencing_small">
+              <p style="margin-top: 1em; font-weight: bold; text-align: center">Personalization module</p>
           </div>
       </div>
-      <div class="content has-text-justified" style="padding-top: 15px">
-          <p>We first learn a vocabulary for triangle meshes, which we then use for autoregressive generation of a mesh.We learn our vocabulary of geometric embeddings from a vast collection of shapes. This is done using an encoder-decoder network, which features vector quantization at its bottleneck.</p>
+
+      <!-- <div class="content has-text-justified" style="padding-top: 15px">
+          <p>We first learn a vocabulary for triangle meshes, which we then use for autoregressive generation of a mesh. We learn our vocabulary of geometric embeddings from a vast collection of shapes. This is done using an encoder-decoder network, which features vector quantization at its bottleneck.</p>
           <p> This transformer is specifically designed for sequence prediction over tokens from the learned vocabulary.</p>
           <p>Once fully trained, it enables the direct sampling of meshes as sequences from this vocabulary.</p>
-      </div>
-      <p>
-        
-      </p>
+      </div> -->
+
 </div>
 </div>
 </section>
@@ -354,14 +361,19 @@
     <div class="columns is-centered" style="text-align: left">
       <div class="column" style="padding: 2em">
           <p style="margin-top: 1em">
-            <b>Multi-Step Planning</b>
-            <ol>
+            <b>Multi-Step Planning</b> </br> 
+            1. API Planner (device & capability selection)</br> 
+            2. Documentation Retrieval</br>
+            3. Get Attribute (read state)</br>
+            4. Execution (send command)</br></br>
+
+            <!-- <ol>
               <li>API Planner (device & capability selection)</li>
               <li>Documentation Retrieval</li>
               <li>Get Attribute (read state)</li>
               <li>Execution (send command)</li>
-            </ol>
-              </br>
+            </ol> 
+              </br> -->
             <b>Code Free Interaction</b></br>
             Leverages online documentation to control SmartThings devices
               </br>
@@ -373,7 +385,7 @@
       </div>
       <div class="column" style="align-self: center">
           <img src="./static/images/smarthings_integration2.png" alt="sequencing_small">
-          <p style="margin-top: 1em; font-weight: bold">text</p>
+          <p style="margin-top: 1em; font-weight: bold; text-align: center">SAGE device interaction execution process</p>
       </div>
     </div>
     </div>
@@ -409,8 +421,8 @@
           </p>
       </div>
       <div class="column" style="align-self: center">
-          <img src="./static/images/persistent.png" alt="sequencing_small">
-          <p style="margin-top: 1em; font-weight: bold">Persistent commands pipeline</p>
+          <img src="./static/images/persistent.png"  alt="sequencing_small">
+          <p style="margin-top: 1em; font-weight: bold; text-align: center">Persistent commands pipeline</p>
       </div>
     </div>
 </div>
@@ -444,21 +456,76 @@
               </br>
           </p>
           <img src="./static/images/device_disambiguation1.png" alt="sequencing_small">
+          <p style="margin-top: 1em; font-weight: bold; text-align: center">VLM device matching</p>
       </div>
       <div class="column" style="align-self: center">
           <img src="./static/images/device_disambiguation2.png" alt="sequencing_small">
-          <p style="margin-top: 1em; font-weight: bold">Home layout with multiple connected lights</p>
+          <p style="margin-top: 1em; font-weight: bold; text-align: center">Home layout with multiple connected lights</p>
       </div>
     </div>
 </div>
 </div>
 </section>
 
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Results</h2>
     <p>TODO</p>
+</div>
+</div>
+</section> -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results</h2>
+
+      <!-- Brief results description -->
+      <div class="columns is-centered" style="text-align: left"> 
+        <div class="column" style="padding: 2em">
+            <p>
+              To evaluate SAGE's performance, we created a dataset of 50 challenging smart home automation test cases which tested the system's ability to be personalized, to resolve user intent from unstructured queries, to resolve devices referred to in natural ways (e.g."the light by the piano"), and to appropriately handle command persistence and chaining. 
+              </br>
+              These challenges are very difficult for today's smart home automation systems, but reflect the sophistication smart home users will demand next-generation systems. We compare SAGE against two other baseline LLM smart home assistant approaches: One-Prompt and Sasha (see paper for details).
+              </br>
+              SAGE achieved a success rate of 76% on these tasks. This value, while imperfect, is much higher than that achieved by existing smart home assistants, even those based on powerful LLM technology. Each success required the successful sequential use of many tools, meaning that in fact the number of successful tool uses is much larger than the number of failed ones. 
+            </p>
+            <!-- <p style="margin-top: 1em">
+              column text
+            </p>
+            <img src="./static/images/device_disambiguation1.png" alt="sequencing_small">
+            <p style="margin-top: 1em; font-weight: bold; text-align: center">VLM device matching</p> -->
+        </div>
+        <div class="column" style="align-self: center">
+            <!-- <img src="./static/images/device_disambiguation2.png" alt="sequencing_small"> -->
+            <p style="margin-top: 1em; font-weight: bold; text-align: center">TODO: eventually put in small table of some illustrative evaluation tasks -- Abhisek is supposed to choose them for the paper -- use those ones.</p>
+        </div>
+      </div>
+
+    <!-- IMAGES -->
+    <div class="columns is-centered" style="text-align: left"> 
+      <div class="column" style="padding: 2em">
+          <!-- <p>A couple of sentences describing the resultssssssssssssss sssssssssssssssss ssssssssssss ssssssssssssssssss ssssssssssssssssssssssss.</p>
+          <p style="margin-top: 1em">
+            column text 1
+          </p> -->
+          <img src="./static/images/seen_full_results.png" alt="sequencing_small">
+          <p style="margin-top: 1em; text-align: center">Overall success rates on 50 challenging tasks. SAGE leverages a collection of tools that allow it to integrate a large amount of information into its decision making process, allowing it to outperform other LLM-based methods by a significant margin. Designed primarily for use with GPT-4, it outperforms other methods with a variety of LLMs, including open source models such as Lemur. Error bars indicate max and min scores over the three runs.</p>
+      </div>
+
+      <div class="column" style="align-self: center">
+          <img src="./static/images/unseen_full_results.png" alt="sequencing_small">
+          <p style="margin-top: 1em; text-align: center">Overall success rates on a "test set" of 10 extra tasks. These tasks were not seen by the SAGE's designers during the iteration process, and serve to validate that the prompts used in SAGE are not over-engineered to a particular task set. Error bars indicate max and min scores over the three runs.</p>
+      </div>
+
+      <div class="column" style="align-self: center">
+        <img src="./static/images/seen_radar_chart.png" alt="sequencing_small">
+        <!-- <p style="margin-top: 1em; font-weight: bold; text-align: center">column 3</p> -->
+        <p style="margin-top: 1em; text-align: center">SAGE success rates for each category of challenging tasks on the 50 task set. Note the inner ring of the chart indicates zero success rate, not the center.</p>
+      </div>
+    </div>
+    
 </div>
 </div>
 </section>
@@ -631,7 +698,7 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Paper</h2>
+      <h2 class="title">Paper [TODO: add final version]</h2>
       <iframe  src="static/pdfs/Smarthome_Paper.pdf" width="100%" height="550">
           </iframe>
       </div>
