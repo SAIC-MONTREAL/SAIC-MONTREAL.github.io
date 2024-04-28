@@ -84,7 +84,7 @@
                     <span class="author-block">
                       <b>Samsung AI Center Montreal</b>
                       <!-- <br>
-                      Conference name and year TODO: add journal--> 
+                      Submitted to IEEE Internet of Things Journal (IoT-J)  -->
                     </span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
@@ -155,7 +155,7 @@
         <h2 class="subtitle has-text-centered">
           We present <b>SAGE</b> (<u>S</u>mart Home <u>A</u>gent with <u>G</u>rounded <u>E</u>xecution): an LLM-based smart home assistant framework, leveraging a variety of tools.
         </h2>
-        <img src="./static/images/put_game_on_demo_horiz.png" alt="todo" style="width: 70%;height: auto;">
+        <img src="./static/images/put_game_on_demo_horiz.png" alt="System example" style="width: 70%;height: auto;">
       </div>
     </div>
   </div>
@@ -189,10 +189,10 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract [TODO: update with final abstract]</h2>
+        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This article introduces <span class="dnerf">SAGE</span> (Smart home Agent with Grounded Execution), a framework designed to maximize the flexibility of smart home assistants by replacing manually-defined inference logic with an LLM-powered autonomous agent system. SAGE integrates information about user preferences, device states, and external factors (such as weather and TV schedules) through the orchestration of a collection of tools. SAGE's capabilities include learning user preferences from natural-language utterances, interacting with devices by reading their API documentation, writing code to continuously monitor devices, and understanding natural device references. To evaluate SAGE, we develop a benchmark of 43 highly challenging smart home tasks, where SAGE successfully achieves 23  tasks, significantly outperforming existing LLM-enabled  baselines (5  / 43)
+            The common-sense reasoning abilities and vast general knowledge of Large Language Models (LLMs) make them a natural fit for interpreting user requests in a smart home assistant context. LLMs, however, lack specific knowledge about the user and their home, which limits their potential impact. SAGE (Smart Home Agent with Grounded Execution), overcomes these and other limitations by using a scheme in which a user request triggers an LLM-controlled sequence of discrete actions. These actions can be used to retrieve information, interact with the user, or manipulate device states. SAGE controls this process through a dynamically constructed tree of LLM prompts, which help it decide which action to take next, whether an action was successful, and when to terminate the process. The SAGE action set augments an LLM's capabilities to support some of the most critical requirements for a smart home assistant. These include: flexible and scalable user preference management <i>(Is my team playing tonight?")</i>, access to any smart device's full functionality without device-specific code via API reading <i>(Turn down the screen brightness on my dryer")</i>, persistent device state monitoring <i>(Remind me to throw out the milk when I open the fridge")</i>, natural device references using only a photo of the room <i>(Turn on the lamp on the dresser")</i>, and more. We introduce a benchmark of 50 new and challenging smart home tasks where SAGE achieves a 76% success rate, significantly outperforming existing <i>LLM-enabled</i> baselines (30% success rate).  
           </p>
         </div>
       </div>
@@ -299,7 +299,7 @@
     </div>
     <div class="columns is-centered" style="text-align: center">
       <div class="column" style="padding: 2em">
-          <img src="./static/images/agent_block_diagram.png" alt="todo" style="width: 60%;height: auto;">
+          <img src="./static/images/agent_block_diagram.png" alt="agent block diagram" style="width: 60%;height: auto;">
           <!-- <p style="margin-top: 1em; font-weight: bold">^gif?</p> -->
       </div>
     </div>
@@ -484,7 +484,9 @@
       <!-- Brief results description -->
       <div class="columns is-centered" style="text-align: left"> 
         <div class="column" style="padding: 2em">
-            <p>
+        </br>
+        </br>
+          <p>
               To evaluate SAGE's performance, we created a dataset of 50 challenging smart home automation test cases which tested the system's ability to be personalized, to resolve user intent from unstructured queries, to resolve devices referred to in natural ways (e.g."the light by the piano"), and to appropriately handle command persistence and chaining. 
               </br>
               These challenges are very difficult for today's smart home automation systems, but reflect the sophistication smart home users will demand next-generation systems. We compare SAGE against two other baseline LLM smart home assistant approaches: One-Prompt and Sasha (see paper for details).
@@ -498,8 +500,9 @@
             <p style="margin-top: 1em; font-weight: bold; text-align: center">VLM device matching</p> -->
         </div>
         <div class="column" style="align-self: center">
-            <!-- <img src="./static/images/device_disambiguation2.png" alt="sequencing_small"> -->
-            <p style="margin-top: 1em; font-weight: bold; text-align: center">TODO: eventually put in small table of some illustrative evaluation tasks -- Abhisek is supposed to choose them for the paper -- use those ones.</p>
+            <img src="./static/images/benchmark2.png" alt="benchmark">
+            <p style="margin-top: 1em; font-weight: bold; text-align: center">An illustrative subset of the 50 tasks used for evaluation. We classify the test cases according to five types of technical challenges which are difficult for existing systems: Personalization, Persistence, Device resolution, Intent resolution, and Command chaining. The full list can be found on the SAGE code repository.</p>
+          
         </div>
       </div>
 
@@ -698,8 +701,8 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Paper [TODO: add final version]</h2>
-      <iframe  src="static/pdfs/Smarthome_Paper.pdf" width="100%" height="550">
+      <h2 class="title">Paper</h2>
+      <iframe  src="static/pdfs/SAGE_paper_apr26_2.pdf" width="100%" height="550">
           </iframe>
       </div>
     </div>
